@@ -1,0 +1,17 @@
+
+body{
+    width: 500px;
+    border-style: dashed;
+    border-width: 15px;
+    border-color: #FBC02D;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 15px;
+}
+
+p{
+    font-size: 20px;
+}
