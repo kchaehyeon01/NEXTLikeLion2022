@@ -1,0 +1,140 @@
+body{
+    width:450px;
+    border:1px solid black;
+    display: flex;
+}
+
+.top_container{
+    position:fixed;
+    display:inline-flex;
+    justify-content: space-between;
+    width:450px;
+    height:60px;
+    background-color: white;
+    z-index:4;
+    align-items:center;
+}
+
+.profile_container{
+    position:relative;
+    top:60px;
+    display:flex;
+    flex-direction:column;
+    width:450px;
+    height:400px;
+    z-index:3;
+}
+
+.stickytab_container{
+    position:sticky;
+    top:69px;
+    display:inline-flex;
+    justify-content:space-around;
+    width:450px;
+    height:60px;
+    background-color: white;
+    z-index:2;
+}
+
+.stickytab_container>img{
+    position:sticky;
+    width:40px;
+    height:40px;
+    
+}
+
+.subcontainer1{
+    display:inline-flex;
+    justify-content:space-between;
+    height:90px;
+}
+
+.info{
+    width:350px;
+}
+
+.info_num{
+    width:340px;
+    display:inline-flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+
+.info_num>p{
+    margin:10px 0px;
+}
+
+.info_txt{
+    width:340px;
+    display:inline-flex;
+    justify-content:space-around;
+    align-items:flex-start;
+}
+
+.info_txt>p{
+    margin:0px;
+}
+
+.subcontainer2>p{
+    margin:0px;
+}
+
+.subcontainer3{
+    display:inline-flex;
+    justify-content:space-around;
+}
+
+.subcontainer3>p{
+    border:1px solid gray;
+    width:120px;
+    height:35px;
+    border-radius:5px;
+    justify-content:center;
+    text-align:center;
+    vertical-align:middle;
+}
+
+#follow_icon{
+    width:35px;
+    height:35px;
+}
+
+.subcontainer4{
+    display:inline-flex;
+}
+
+.subcontainer4>p{
+    display:flex;
+}
+
+.subcontainer4>p>img{
+    border-radius:30px;
+}
+
+.contents{
+    display:inline-block;
+    width:450px;
+    z-index:1;
+}
+
+.contents>img{
+    justify-content:space-around;
+    width:146px;
+    height:146px;
+}
+
+.bottom{
+    position:fixed;
+    bottom:0;
+    width:450px;
+    height:50px;
+    display:flex;
+    justify-content:space-around;
+    background-color:white;
+    align-items:center;
+}
+
+.bottom>img{
+    width:40px;
+    height:40px;
+}
