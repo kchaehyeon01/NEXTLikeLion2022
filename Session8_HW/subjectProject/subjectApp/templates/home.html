@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:lightskyblue">
+    <div class="title" style="background-color:lightgray; border-color:yellow; border-style:dashed">
+        <h1>Major List</h1>
+    </div>
+
+    <div class="major">
+        <h2>모든 전공</h2>
+        <a class="add_major_button" href="{% url 'addMajor' %}" style="border-style:groove; background-color:yellow; border-color:blue; border:1px">전공 추가</a>
+
+        <ul>
+            {% for major in majors %}
+            <div>
+                <li>
+                    <span>{{ major.name }}</span>
+                </li>
+            </div>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="subject"> 
+        <h2>모든 과목</h2>
+        <a class="add_subject" href="{% url 'addSubject' %}">과목 추가</a>
+            {% for subject in subjects %}
+            <div class = "spec_subject">
+                <p>{{subject.subject_name}} |{{subject.major}} | {{subject.prof_name}}</p>
+                <p>{{subject.memo}}</p>
+                <ul>
+                    <li>과목 : {{subject.subject_name}}</li>
+                    <li>전공 : {{subject.major}}</li>
+                    <li>담동 교수 : {{subject.prof_name}}</li>
+                    <li>메모 : {{subject.memo}}</li>
+                </ul>
+            </div>
+            {% endfor %}
+    </div>
+
+   
+</body>
+</html>
