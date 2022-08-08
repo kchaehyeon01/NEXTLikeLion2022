@@ -1,0 +1,31 @@
+*{
+    background: black;
+}
+
+#mainimg{
+    opacity:0.3;
+    width:100%;
+}
+
+.home_top{
+    width:100%;
+    position:absolute;
+    top:0px;
+    font-size:50px;
+    color:white;
+    padding:0px;
+    background-color: transparent;
+}
+
+.home_top_content{
+    display:flex;
+    justify-content:center;
+    background-color: transparent;
+}
+
+h1{
+    background-color: transparent;
+}
+.home_middle{
+    position:absolute;
+}

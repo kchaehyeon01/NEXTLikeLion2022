@@ -1,0 +1,14 @@
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1;
+    width:100%; height:100%;
+    overflow:auto;
+    cursor:pointer;
+    background-color:rgba(0,0,0,0.8);
+}
+
+#modal_notice{
+    display:flex;
+    z-index:1;
+}

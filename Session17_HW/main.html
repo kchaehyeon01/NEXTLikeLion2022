@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div class="home">
+        <img id="mainimg" src="https://naturenibble.com/wp-content/uploads/2022/05/How-Dangerous-Are-Honey-Badgers-05232022.jpg" alt="벌꿀오소리">
+        <div class="home_top">
+            <div class="home_top_content">
+                <h1>Honey Badger</h1>
+            </div>
+        </div>
+        <div class="home_middle">
+            <div class="album">
+                <img class="fig" src="https://image.fmkorea.com/files/attach/new/20191124/486616/1251742985/2415732028/4f4ff106325bcb652801709268349823.jpg">
+                <img class="fig" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-jtsm8Xb4HdJCIDQBxe3tStlpc5fIAqkquQ&usqp=CAU">
+                <img class="fig" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2cpWdH2zf2kFxgAylAnAfZwDZ6Qcu1K7TKanSRUg08CO_clhk8PIQdjN0-eaoHewDqU&usqp=CAU">
+                <img class="fig" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfGz3bMdpoIKuofnApeIx5PSDJCG0alPQj0ZZsHIgkHaHrTAbriecEa-WwOzr0ftY5wmA&usqp=CAU">
+                <img class="fig" src="https://images.theconversation.com/files/121750/original/image-20160509-20612-pzis43.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop">
+                <img class="fig" src="https://a-z-animals.com/media/animals/images/original/honey_badger.jpg">
+                <img class="fig" src="https://i.pinimg.com/originals/df/20/fa/df20fa60e67f50475a1edecf9cc87adb.jpg">
+                <img class="fig" src="https://www.earthtouchnews.com/media/295723/honey_badger_intelligence_08_05_2014.jpg?width=355&height=237&mode=crop&upscale=false">
+            </div>
+        </div>
+        <div class="home_bottom">
+        </div>
+
+    </div>
+    <div class="modal_container"> <!-- 공지사항 모달 : 하루동안 안보기, 다시보지 않기 구현하기 -->
+        <div class="modal" id="modal_notice">
+            <div class="modal-header">
+                <p>Honey Badger Gallery</p>
+                <button class="modal-close-btn"><p>X</p></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>벌꿀 오소리</li>
+                    <li>제목을 클릭하면 정보를 보실 수 있습니다</li>
+                    <li>이미지를 클릭하면 크게 보실 수 있습니다</li>
+                </ul>
+            </div>
+            <div class="modal-bottom">
+                <button class="modal-stop-btn-today">오늘 하루 보지 않기</button>
+                <button class="modal-stop-btn-never">다시 보지 않기</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 정보 모달 -->
+        <div class="modal" id="modal_info">
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 이미지 모달 -->
+        <div class="modal" id="modal_img">
+            <span class="close">&times;</span>
+            <img id="modal_image" src="https://image.fmkorea.com/files/attach/new/20191124/486616/1251742985/2415732028/4f4ff106325bcb652801709268349823.jpg">
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 이미지 모달 -->
+        <div class="modal" id="modal_img">
+            <span class="close">&times;</span>
+            <img id="modal_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-jtsm8Xb4HdJCIDQBxe3tStlpc5fIAqkquQ&usqp=CAU">
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 이미지 모달 -->
+        <div class="modal" id="modal_img">
+            <span class="close">&times;</span>
+            <img id="modal_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2cpWdH2zf2kFxgAylAnAfZwDZ6Qcu1K7TKanSRUg08CO_clhk8PIQdjN0-eaoHewDqU&usqp=CAU">
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 이미지 모달 -->
+        <div class="modal" id="modal_img">
+            <span class="close">&times;</span>
+            <img id="modal_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfGz3bMdpoIKuofnApeIx5PSDJCG0alPQj0ZZsHIgkHaHrTAbriecEa-WwOzr0ftY5wmA&usqp=CAU">
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 이미지 모달 -->
+        <div class="modal" id="modal_img">
+            <span class="close">&times;</span>
+            <img id="modal_image" src="https://images.theconversation.com/files/121750/original/image-20160509-20612-pzis43.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop">
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 이미지 모달 -->
+        <div class="modal" id="modal_img">
+            <span class="close">&times;</span>
+            <img id="modal_image" src="https://a-z-animals.com/media/animals/images/original/honey_badger.jpg">
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 이미지 모달 -->
+        <div class="modal" id="modal_img">
+            <span class="close">&times;</span>
+            <img id="modal_image" src="https://i.pinimg.com/originals/df/20/fa/df20fa60e67f50475a1edecf9cc87adb.jpg">
+        </div>
+    </div>
+    <div class="modal_container"> <!-- 이미지 모달 -->
+        <div class="modal" id="modal_img">
+            <span class="close">&times;</span>
+            <img id="modal_image" src="https://www.earthtouchnews.com/media/295723/honey_badger_intelligence_08_05_2014.jpg?width=355&height=237&mode=crop&upscale=false">
+        </div>
+    </div>
+
+    <script type="module" src="./js/modal.js"></script>
+    
+</body>
+</html>
